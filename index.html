@@ -3,34 +3,59 @@
     <head>        
         <meta charset="UTF-8">
         <meta name="description" content="Challenge 3">
+        <meta name="author" content="Toni Clemente Garcia" />
         <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="./images/logo.png">
         <title>Pets</title>
     </head>
     <body>
-        <header>
-            <h1>Hola mundo</h1>           
+        <header class="header">
+            <div class="header_logo">
+                <img src="./images/logo2.png">            
+            </div>
+            <div class="header_list">
+                <nav class="header_navigation">                
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Live Demo</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Pets Boarding Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pet Toys and Food Shop</a>
+                                    </li>   
+                                    <li>
+                                        <a href="#">Pets Training School</a>
+                                    </li>                  
+                                </ul>
+                        </li>
+            
+                        <li>
+                            <a href="#">Live Demo Blocks</a>
+                        </li>
+                        <li>
+                            <a href="#">Buy Now</a>
+                        </li> 
+                    </ul>                    
+                </nav>
+            </div>
         </header>
-        <main>
-            <section>
-                <header>
-                    <h2>Estudios</h2>
-                </header>
-            </section>
-            <article>
-                <h3>Users</h3>
-                <ol>
-                    <li>Juan</li>
-                    <li>Elena</li>
-                    <li>Raul</li>
-                    <li>Maria</li>
-                </ol>
-            </article>
+        <main class="content">
+            <h1>Pet Activities</h1>
+            <div></div><p>Take a closer look</p>
+            <span class="button">View All</span>
+            <id class="content_images">
+                <id class="content_images_image"><img src="./images/01.jpg"></id>
+                <id class="content_images_image"><img src="./images/02.jpg"></id>
+                <id class="content_images_image"><img src="./images/03.jpg"></id>
+            </id>
         </main>
-        <aside>
-            Webs amigas
-            <my-card></my-card> <!-- esto es un custom element. Me he inventado la etiqueta, 
-                                    siempre que lleve un guion HTML lo permite. Lo toma como un div -->
-        </aside>
+
         <footer>
             <address>Pepito</address>
         </footer>
