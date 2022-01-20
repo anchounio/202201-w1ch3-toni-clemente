@@ -1,3 +1,8 @@
+*{
+    font-family: nunito;
+    box-sizing: border-box;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -12,27 +17,13 @@
     box-shadow: none;
 }
 
-.content_images {
-    display: flex;
-    justify-content: space-between;
-}
-
-.content_images_image {
-    border-radius: 20px;
-    width: 450px;
-    height: 400px
-}
-
-
 /*MENU  */
 
 .header_navigation{   
     font-size: 14px;
-
-
 }
 
-.header_navigation ul{
+.header_navigation ul{  /*incorrecto, tenia que haber creado una clase para esto... mas BEM todavía!!*/
     list-style: none;
     text-align: center;
     margin: 0px auto;
@@ -42,12 +33,10 @@
     float: left;
     line-height: 100px;
     transition: all 200ms;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
 .header_navigation > ul > li > a{
-
     display: block; /*hace que no se mueva al seleccionar el desplegable*/
     transition: all 200ms;
     padding-left: 20px;
@@ -75,6 +64,20 @@
 
 
 
+.content_images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* para responsive */
+}
+
+.content_images_image {
+    border-radius: 20px;
+    width: 450px;
+    height: 400px;
+    width: 33%; /* para responsive */
+    height: 100%; /* para responsive */
+}
+
 
 
 
@@ -82,16 +85,11 @@
     display:flex;
     justify-content: flex-end;
     border: 1px solid black;
-
 }
 
 .content_text{
     display:flex;
     justify-content: space-between;
-}
-
-*{
-    font-family: nunito;
 }
 
 h1{
