@@ -43,23 +43,24 @@
     line-height: 100px;
     transition: all 200ms;
     font-weight: bold;
-    color: black;
+    
 }
 
 .header_navigation > ul > li > a{
 
-    display: block;
+    display: block; /*hace que no se mueva al seleccionar el desplegable*/
     transition: all 200ms;
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
     font-size: 20px;
+    color: black;
 }
 
 /*MENU DESPLEGABLE */
 .header_navigation > ul > li > ul{
-    display: none;
-    position: absolute;
+    display: none; /*hace que no se vea el desplegable*/
+    position: absolute; /*necesario para que no se mueva todo al abrir el desplegable*/
     text-align: left;
     font-size: 20px;
     text-decoration: none;
@@ -84,7 +85,7 @@
 
 }
 
-.prueba{
+.content_text{
     display:flex;
     justify-content: space-between;
 }
